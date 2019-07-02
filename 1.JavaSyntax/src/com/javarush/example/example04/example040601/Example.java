@@ -1,0 +1,33 @@
+package com.javarush.example.example04.example040601;
+
+public class Example {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 5;
+        System.out.println(a == b);
+
+        Cat cat1 = new Cat("Vaska");
+        Cat cat2 = cat1;
+        System.out.println(cat1 == cat2);
+
+        String s = new String("Mama");
+        String s2 = s;
+        System.out.println(s == s2);
+
+        Cat cat3 = new Cat("Vaska");
+        Cat cat4 = new Cat("Vaska");
+        System.out.println(cat3 == cat4);
+
+        String s3 = new String("Mama");
+        String s4 = new String("Mama");
+        System.out.println(s3 == s4);
+
+        Cat cat5 = new Cat("Vaska");
+        Cat cat6 = new Cat("Vaska");
+        System.out.println(cat5.equals(cat6));
+
+        String s5 = new String("Mama");
+        String s6 = new String("Mama");
+        System.out.println(s5.equals(s6));
+    }
+}
